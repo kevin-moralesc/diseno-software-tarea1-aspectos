@@ -11,7 +11,7 @@ public class CarritoCompras {
     }
     public static CarritoCompras getInstancia() { // Método para obtener la instancia única del carrito
         if (carritoUnico == null) {  //si no existe el carrito, lo creamos
-            System.out.println("[Singleton]: No existe carrito activo. Creando el carrito por PRIMERA y ÚNICA vez.");
+            System.out.println("[Singleton]: No existe carrito activo. Creando el carrito por primera vez.");
             carritoUnico = new CarritoCompras();
         } else {    //Si ya existe , no se crea uno nuevo, se reutiliza el mismo
             System.out.println("[Singleton]: El carrito ya existe en memoria. Reutilizando la instancia existente.");
